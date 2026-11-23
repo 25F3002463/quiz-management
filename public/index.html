@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Markbook: log in</title>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head>
+<body><main class="wrap narrow">
+<h1>Markbook</h1><p class="mu">Chapter, topic and full-syllabus quizzes.</p>
+<div class="card">
+  <div class="seg"><button class="chip on" data-role="student">Student</button><button class="chip" data-role="teacher">Teacher</button></div>
+  <div class="seg"><button class="chip on" data-mode="login">Log in</button><button class="chip" data-mode="signup">Sign up</button></div>
+  <form id="f">
+    <div id="nameRow"><label for="nm">Full name</label><input id="nm" autocomplete="name"></div>
+    <label for="em">Email</label><input id="em" type="email" autocomplete="email" required>
+    <label for="pw">Password</label><input id="pw" type="password" minlength="6" required>
+    <div id="codeRow"><label for="cd">Teacher invite code</label><input id="cd"></div>
+    <p id="err" class="bad" role="alert"></p>
+    <button class="btn" id="go">Log in</button>
+  </form>
+</div></main>
+<script src="common.js"></script>
+<script src="auth.js"></script></body></html>
